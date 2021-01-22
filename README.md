@@ -261,4 +261,196 @@ int main()
 }
 ```
 
+6. Wap to print 1 to 100
+
+```c
+#include<iostream>
+using namespace std;
+ class sequence
+ {
+     private:
+     int i=1;
+     public:
+     void input();
+     void output();
+ };
+ void sequence::input(){
+     
+ }
+
+ void sequence::output()
+ {
+while(i<=100)
+{
+    cout<<"\t"<<i;
+    i++;
+
+}
+ }
+int main()
+ {
+     sequence(x);
+     x.input();
+     x.output();
+ }
+ ```
+ 7. Display even number from 1 - 50 & find its sum.
+ 
+ ```c
+ #include<iostream>
+using namespace std;
+ class even
+ {
+     private:
+     int i=2,sum=0;
+     public:
+     void input();
+     void output();
+ };
+ void even::input(){
+     
+ }
+
+ void even::output()
+ {
+while(i<=50)
+{
+    cout<<"\t"<<i;
+    i=i+2;
+    sum=sum+i;
+}
+ cout<<"sum:"<<sum;
+ }
+int main()
+ {
+     even(x);
+     x.input();
+     x.output();
+ }
+ ```
+ 8. Display odd number from 1 - 50 & find its sum.
+ 
+ ```c
+ #include<iostream>
+using namespace std;
+ class odd
+ {
+     private:
+     int i=1,sum=0;
+     public:
+     void input();
+     void output();
+ };
+ void odd::input(){
+     
+ }
+
+ void odd::output()
+ {
+for(i=1;i<=50;i=i+2)
+{
+    cout<<"\t"<<i;
+    i=i+2;
+    sum=sum+i;
+}
+ cout<<"sum:"<<sum;
+ }
+int main()
+ {
+     odd(x);
+     x.input();
+     x.output();
+ }
+ ```
+ 9. Find root of quadratic equation
+ 
+ ```c
+ #include <iostream>
+#include <cmath>
+using namespace std;
+class roots {
+    private:
+    int a, b, c, d, r1, r2;
+    public: 
+    void input();
+    void output();
+};
+void roots::input() {
+    cout << "Standard form of quadratic equation is:\n";
+    cout << "ax^2 + bx + c = 0\n";
+    cout << "where a, b, c are known numbers and a != 0\n\n";
+    
+    cout << "Enter a: ";
+    cin >> a;
+    
+    cout << "Enter b: ";
+    cin >> b;
+    
+    cout << "Enter c: ";
+    cin >> c;
+}
+void roots::output() {
+     d = (b*b) - 4*a*c;
+    if (d > 0) {
+        cout << "It has two real roots:\n";
+        r1 = (-b + sqrt(d)) / 2*a;
+        r2 = (-b - sqrt(d)) / 2*a;
+        cout << "First root: " << r1;
+        cout << "\nSecond root: " << r2;
+    }
+    else if (d == 0) {
+        cout << "It has one real root.\n";
+        r1 = -b / 2*a;
+        cout << "Root: " << r1;
+    }
+    else if (d < 0) {
+        cout << "It has no real roots";
+    }
+    else {
+        cout << "Enter valid numbers";
+    }
+}
+int main () {
+    roots q;
+    q.input();
+    q.output();
+}
+```
+10. Find sequence of a protein as given below:  
+            C = ccttaattaattccat
+            A = attcttcttc
+            T = ttatccta by entering a character. (switch case)
+       
+       ```c
+       #include <iostream>
+using namespace std;
+class protein {
+    private:
+    char letter;
+    public: 
+    void switchcase();  //I named the function switchcase
+};
+void protein::switchcase() {
+    cout << "Enter a letter: ";
+    cin >> letter;
+    switch (letter) {
+        case 'c':
+        case 'C': cout << "The protein sequence is: ccttaattaattccat";
+        break;
+        case 'a':
+        case 'A': cout << "The protein sequence is: attcttcttc";
+        break;
+        case 't':
+        case 'T': cout << "The protein sequence is: ttatccta";
+        break;
+        default: cout << "ERROR: Enter an appropriate character.";
+    }
+}
+int main () {
+    protein q;
+    q.switchcase();
+}
+```
+11. Generate number from 1 - 100.
+
 
