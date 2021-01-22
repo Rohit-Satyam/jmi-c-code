@@ -420,9 +420,8 @@ int main () {
             C = ccttaattaattccat
             A = attcttcttc
             T = ttatccta by entering a character. (switch case)
-       
-       ```c
-       #include <iostream>
+```c
+ #include <iostream>
 using namespace std;
 class protein {
     private:
@@ -451,6 +450,265 @@ int main () {
     q.switchcase();
 }
 ```
-11. Generate number from 1 - 100.
+11. Generate number from 1 - 100 using do/while loop.
+
+```c
+#include <iostream>
+using namespace std;
+class numbers {
+    private:
+    int i;
+    public: 
+    void no();
+};
+void numbers::no() {
+    i = 1;
+    do {
+        cout << i << "\t";
+        i++;
+    }
+    while (i <= 100);
+}
+int main () {
+    numbers n;
+    n.no();
+}
+
+```
+12. Generate numbers from 1 - 100 without using a loop
+
+```c
+#include <iostream>
+using namespace std;
+class numbers {
+    private:
+    int i;
+    public: 
+    void no();
+};
+void numbers::no() {
+    i = 1;
+    x:
+    cout << i << "\t";
+    i++;
+    if (i <= 100) {
+        goto x;
+    }
+}
+int main () {
+    numbers n;
+    n.no();
+}
+```
+13. Calculate electricity bill of a consumer with the following condition:
+-	Unit less than 200. Price is Rs. 1.5  per unit.
+-	Unit greater than 200 and less than 400. Price is Rs. 4 per unit.
+-	Unit greater than 400 and less than 900. Price is Rs. 6 per unit.
+
+```c
+#include <iostream>
+using namespace std;
+class elecBill {
+    private:
+    int units;
+    float bill;
+    public: 
+    void input();
+    void output();
+};
+void elecBill::input() {
+    cout << "Enter units of electricity consumed: ";
+    cin >> units;
+}
+void elecBill::output() {
+    if (units <= 200) {
+        cout << "\nFor the units consumed by you, rate of 1 unit electricity is: Rs. 1.5\n";
+        bill = 200 * 1.5;
+        cout << "\nYour electricity bill is Rs. " << bill;
+    }
+    else if (units > 200 && units <= 400) {
+        cout << "\nFor the units consumed by you, rate of 1 unit electricity is: Rs. 4\n";
+        bill = 200 * 4;
+        cout << "\nYour electricity bill is Rs. " << bill;
+    }
+    else if (units > 400 && units <= 900) {
+        cout << "\nFor the units consumed by you, rate of 1 unit electricity is: Rs. 6\n";
+        bill = 200 * 6;
+        cout << "\nYour electricity bill is Rs. " << bill;
+    }
+    else {
+        cout << "\nERROR: Enter valid amount";
+    }
+}
+int main () {
+    elecBill n;
+    n.input();
+    n.output();
+}
+```
+14. Swap two characters
+
+```c
+#include<iostream>
+using namespace std;
+class afsha
+{
+    private:
+    char a,b,c;
+    public:
+    void inputz();
+    void outputz();
+};
+void afsha::inputz()
+{
+cout<<"enter value of a,b=";
+cin>>a>>b;
+cout<<"After swaping:\n";
+}
+void afsha::outputz()
+{
+c=a;
+a=b;
+b=c;
+cout<<"a="<<a<<"\n";
+cout<<"b="<<b;
+}
+int main()
+{
+afsha o;
+o.inputz();
+o.outputz();
+}
+```
+15. Area of Rectangle
+
+```
+#include<iostream>
+using namespace std;
+class rectangle
+{
+    private:
+    int l,b,a;
+    public:
+    void inputz();
+    void outputz();
+};
+void rectangle::inputz()
+{
+cout<<"enter value of l and b=";
+cin>>l>>b;
+}
+void rectangle::outputz()
+{
+a=l*b;
+cout<<"area of rectangle="<<a;
+}
+int main()
+{
+rectangle o;
+o.inputz();
+o.outputz();
+}
+```
+16. Area of Circle
+
+```c
+#include<iostream>
+using namespace std;
+class circle
+{
+    private:
+    float r,a;
+    public:
+    void inputz();
+    void outputz();
+};
+void circle::inputz()
+{
+cout<<"enter value of r=";
+cin>>r;
+}
+void circle::outputz()
+{
+a=3.14*r*r;
+cout<<"area of circle="<<a;
+}
+int main()
+{
+circle o;
+o.inputz();
+o.outputz();
+}
+```
+17. Swap two variables
+
+```c
+#include<iostream>
+using namespace std;
+class exchange
+{
+    private:
+    int a,b,e;
+    public:
+    void inputz();
+    void outputz();
+};
+void exchange::inputz()
+{
+cout<<"enter value of a,b=";
+cin>>a>>b;
+}
+void exchange::outputz()
+{
+e=a;
+a=b;
+b=e;
+cout<<"a:"<<a<<"\t";
+cout<<"b:"<<b;
+}
+int main()
+{
+exchange o;
+o.inputz();
+o.outputz();
+}
+```
+18. Swap two variables without the third variable
+
+```c
+#include<iostream>
+using namespace std;
+
+class swp
+{
+    private:
+    int a,b;
+    public:
+    void inputz();
+    void outputz();
+};
+void swp::inputz()
+{
+cout<<"enter value of a,b=";
+cin>>a>>b;
+cout<<"After swaping:\n";
+}
+void swp::outputz()
+{
+a=a+b;
+b=a-b;
+a=a-b;
+cout<<"a="<<a<<"\n";
+cout<<"b="<<b;
+}
+int main()
+{
+swp o;
+o.inputz();
+o.outputz();
+}
+```
+
+
 
 
