@@ -708,7 +708,97 @@ o.inputz();
 o.outputz();
 }
 ```
+19. Square of a number
 
+```c
+#include<iostream>
+using namespace std;
+class square
+{
+    private:
+    int a,s;
+    public:
+    void inputz();
+    void outputz();
+};
+void square::inputz()
+{
+cout<<"enter value of a=";
+cin>>a;
+}
+void square::outputz()
+{
+s=a*a;
+cout<<"square="<<s;
+}
+int main()
+{
+square o;
+o.inputz();
+o.outputz();
+}
+```
+20. Sum of 2 numbers
+
+```c
+#include<iostream>
+using namespace std;
+class afsha
+{
+    private:
+    int a,b,s;
+    public:
+    void inputz();
+    void outputz();
+};
+void afsha::inputz()
+{
+cout<<"enter value of a,b=";
+cin>>a>>b;
+}
+void afsha::outputz()
+{
+s=a+b;
+cout<<"sum="<<s;
+}
+int main()
+{
+afsha o;
+o.inputz();
+o.outputz();
+}
+```
+21. Product of 3 numbers
+
+```c
+#include<iostream>
+using namespace std;
+class prod
+{
+    private:
+    int a,b,c,p;
+    public:
+    void inputz();
+    void outputz();
+};
+void prod::inputz()
+{
+cout<<"enter value of a,b,c=";
+cin>>a>>b>>c;
+}
+void prod::outputz()
+{
+p=a*b*c;
+cout<<"product="<<p;
+}
+int main()
+{
+prod o;
+o.inputz();
+o.outputz();
+}
+```
+22. 
 
 
 
