@@ -551,7 +551,7 @@ int main () {
 ```c
 #include<iostream>
 using namespace std;
-class afsha
+class swp
 {
     private:
     char a,b,c;
@@ -559,13 +559,13 @@ class afsha
     void inputz();
     void outputz();
 };
-void afsha::inputz()
+void swp::inputz()
 {
 cout<<"enter value of a,b=";
 cin>>a>>b;
 cout<<"After swaping:\n";
 }
-void afsha::outputz()
+void swp::outputz()
 {
 c=a;
 a=b;
@@ -575,7 +575,7 @@ cout<<"b="<<b;
 }
 int main()
 {
-afsha o;
+swp o;
 o.inputz();
 o.outputz();
 }
@@ -743,7 +743,7 @@ o.outputz();
 ```c
 #include<iostream>
 using namespace std;
-class afsha
+class swp
 {
     private:
     int a,b,s;
@@ -751,19 +751,19 @@ class afsha
     void inputz();
     void outputz();
 };
-void afsha::inputz()
+void swp::inputz()
 {
 cout<<"enter value of a,b=";
 cin>>a>>b;
 }
-void afsha::outputz()
+void swp::outputz()
 {
 s=a+b;
 cout<<"sum="<<s;
 }
 int main()
 {
-afsha o;
+swp o;
 o.inputz();
 o.outputz();
 }
