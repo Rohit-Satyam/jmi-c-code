@@ -1,6 +1,7 @@
-# jmi-c-code
 
-1. Calculate the area of circle
+# C++ Codes MSc. Bioinformatics Ist-Sem
+
+1. **Calculate the area of circle**
 
 ```c
 //Area of the circle
@@ -37,7 +38,7 @@ int main()
     return 0;
 }
 ```
-2. Check Gender
+2. **Check Gender**
 
 ```c
 //Check whether a person is male or female
@@ -81,7 +82,7 @@ int main()
     return 0;
 }
 ```
-3. Check Vowel
+3. **Check Vowel**
 
 ```c
 //Check Vowel Using Switch Case
@@ -139,7 +140,7 @@ int main()
     return 0;
 }
 ```
-4. Display Name
+4. **Display Name**
 
 ```c
 //Display Name on screen
@@ -174,10 +175,9 @@ int main()
     return 0;
 }
 ```
-5. Calculate salary
+5. **Calculate salary**
 
 ```c
-//Check whether a person is male or female
 #include <iostream>
 
 using namespace std;
@@ -216,7 +216,7 @@ int main()
     return 0;
 }
 ```
-6. Simple Interest
+6. **Simple Interest**
 
 ```c
 
@@ -261,7 +261,7 @@ int main()
 }
 ```
 
-6. Wap to print 1 to 100
+6. **WAP to print 1 to 100**
 
 ```c
 #include<iostream>
@@ -294,7 +294,7 @@ int main()
      x.output();
  }
  ```
- 7. Display even number from 1 - 50 & find its sum.
+ 7. **Display even number from 1 - 50 & find its sum.**
  
  ```c
  #include<iostream>
@@ -328,7 +328,7 @@ int main()
      x.output();
  }
  ```
- 8. Display odd number from 1 - 50 & find its sum.
+ 8. **Display odd number from 1 - 50 & find its sum.**
  
  ```c
  #include<iostream>
@@ -362,7 +362,7 @@ int main()
      x.output();
  }
  ```
- 9. Find root of quadratic equation
+ 9. **Find root of quadratic equation**
  
  ```c
  #include <iostream>
@@ -416,10 +416,10 @@ int main () {
     q.output();
 }
 ```
-10. Find sequence of a protein as given below:  
+10. **Find sequence of a protein as given below:  
             C = ccttaattaattccat
             A = attcttcttc
-            T = ttatccta by entering a character. (switch case)
+            T = ttatccta by entering a character. (switch case)**
 ```c
  #include <iostream>
 using namespace std;
@@ -450,7 +450,7 @@ int main () {
     q.switchcase();
 }
 ```
-11. Generate number from 1 - 100 using do/while loop.
+11. **Generate number from 1 - 100 using do/while loop.**
 
 ```c
 #include <iostream>
@@ -475,7 +475,7 @@ int main () {
 }
 
 ```
-12. Generate numbers from 1 - 100 without using a loop
+12. **Generate numbers from 1 - 100 without using a loop**
 
 ```c
 #include <iostream>
@@ -500,7 +500,7 @@ int main () {
     n.no();
 }
 ```
-13. Calculate electricity bill of a consumer with the following condition:
+13. **Calculate electricity bill of a consumer with the following condition:**
 -	Unit less than 200. Price is Rs. 1.5  per unit.
 -	Unit greater than 200 and less than 400. Price is Rs. 4 per unit.
 -	Unit greater than 400 and less than 900. Price is Rs. 6 per unit.
@@ -546,7 +546,7 @@ int main () {
     n.output();
 }
 ```
-14. Swap two characters
+14. **Swap two characters**
 
 ```c
 #include<iostream>
@@ -580,7 +580,7 @@ o.inputz();
 o.outputz();
 }
 ```
-15. Area of Rectangle
+15. **Area of Rectangle**
 
 ```
 #include<iostream>
@@ -610,7 +610,7 @@ o.inputz();
 o.outputz();
 }
 ```
-16. Area of Circle
+16. **Area of Circle**
 
 ```c
 #include<iostream>
@@ -640,7 +640,7 @@ o.inputz();
 o.outputz();
 }
 ```
-17. Swap two variables
+17. **Swap two variables**
 
 ```c
 #include<iostream>
@@ -673,7 +673,7 @@ o.inputz();
 o.outputz();
 }
 ```
-18. Swap two variables without the third variable
+18. **Swap two variables without the third variable**
 
 ```c
 #include<iostream>
@@ -708,7 +708,7 @@ o.inputz();
 o.outputz();
 }
 ```
-19. Square of a number
+19. **Square of a number**
 
 ```c
 #include<iostream>
@@ -738,7 +738,7 @@ o.inputz();
 o.outputz();
 }
 ```
-20. Sum of 2 numbers
+20. **Sum of 2 numbers**
 
 ```c
 #include<iostream>
@@ -768,7 +768,7 @@ o.inputz();
 o.outputz();
 }
 ```
-21. Product of 3 numbers
+21. **Product of 3 numbers**
 
 ```c
 #include<iostream>
@@ -798,7 +798,342 @@ o.inputz();
 o.outputz();
 }
 ```
-22. 
+22. **WAP in c++ to enter the 4 protien, to store its biological name, protien symbol and sequence**
+```c
+#include <iostream>
+
+using namespace std;
+
+class Mat{
+    
+    private:
+        string arr[6][4];
+        int i, j;
+    
+    public:
+        void data();
+};
+
+void Mat::data(){
+    int newLength=0;
+    string newSeq;
+    
+    cout<<"Enter the elements of the array"<<endl;
+    for(int i=0; i<3; i++){
+        for(int j=0; j<3; j++){
+            cin>>arr[i][j];
+        }
+    }
+    cout<<"Elements of the array in tabular form: "<<endl;
+    for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            cout<<arr[i][j]<<"\t";
+        }
+         cout<<endl;
+         string str = arr[i][2];
+         newSeq = newSeq + str;
+         newLength = newLength + str.length();
+    }
+    cout<<"New Sequence is : "<<newSeq<<endl<<"Length of new sequence is : "<<newLength<<endl;
+}
+
+int main()
+{
+    Mat m;
+    m.data();
+
+    return 0;
+}
+```
+23. **WAP in c++ to enter the 4 protien, to store its biological name, protien symbol and sequence using unstructured programing**
+```c
+#include <iostream>
+
+using namespace std;
+
+class Proteins
+{
+  
+  public:
+  string protein[5][3];
+  void enterData() 
+  {
+      
+      for(int i=0;i<5;i++)
+    
+        {   
+            int num=(i+1);;
+             cout<<"Enter Protein "<<num<<" details"<<endl;
+        
+            for(int j=0;j<3;j++)
+                {
+                    if(protein[i][j]==protein[i][0])
+                    {
+                     cout<<"Enter Protein's Name"<<endl;
+                     cin>>protein[i][j];
+                    }
+            
+                    else if(protein[i][j]==protein[i][1])
+                     {
+                          cout<<"Enter Protein's Symbol"<<endl;
+                          cin>>protein[i][j];
+                     }
+            
+                    else if(protein[i][j]==protein[i][2])
+                    {
+                        cout<<"Enter Protein's Sequence"<<endl;
+                        cin>>protein[i][j];
+                    }
+            
+          
+                    
+                    else
+                    { 
+                        continue; 
+                        
+                    }
+            
+        }
+    }
+  }
+   
+    void displayData()
+    {
+         for(int i=0;i<5;i++)
+         {
+             int num2=(i+1);
+                for(int j=0;j<3;j++)
+           {
+             if(protein[i][j]==protein[i][0])
+             {
+                cout<<protein[i][j]<<"\t";
+             }
+            
+           else if(protein[i][j]==protein[i][1])
+            {
+                cout<<protein[i][j]<<"\t";
+            }
+            
+            else if(protein[i][j]==protein[i][2])
+            {
+                cout<<protein[i][j]<<"\t\n";
+            }
+            
+           
+            else
+            { continue; 
+                
+            }
+        }
+                
+    }
+    
+  
+    }  
+};
+
+ int main(){
+     Proteins ptn;
+     cout<<"Please enter details of 3 Proteins"<<endl;
+     ptn.enterData();
+      cout<<"\n";
+    cout<<"The data entered is as follows:\n";
+    cout<<"-----------------------------------\n";
+    cout<<"PROTEIN NAME\tSYMBOL\tSEQUENCE\t"<<endl;
+    cout<<"------------------------------------"<<endl;
+    ptn.displayData();
+    
+    return 0;
+}
+
+25. WAP to measure the length of the aminoacid sequence stored in multi-dimensional array
+```c
+#include <iostream>
+#include <string.h>
+using namespace std;
+class mat {
+    private:
+    string a[5][3];
+    int i, j, len1, len2, len3, len4, len5, len6;
+    string h1, h2, h3, h4, h5, h6;
+    public:
+    void data();
+};
+void mat::data() {
+    cout << "Enter data of a table:";
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 3; j++) {
+            cin >> a[i][j];
+        }
+    }
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 3; j++) {
+            cout << a[i][j] << "\t";
+        }
+        cout << "\n";
+    }
+    h1 = a[0][2];
+    len1 = h1.length();
+    cout << "\nLength of first protein sequence is: " << len1 << "\n";
+    h2 = a[1][2];
+    len2 = h2.length();
+    cout << "\nLength of second protein sequence is: " << len2 << "\n";
+    h3 = a[2][2];
+    len3 = h3.length();
+    cout << "\nLength of third protein sequence is: " << len3 << "\n";
+    h4 = a[3][2];
+    len4 = h4.length();
+    cout << "\nLength of fourth protein sequence is: " << len4 << "\n";
+    h5 = a[4][2];
+    len5 = h5.length();
+    cout << "\nLength of fifth protein sequence is: " << len5 << "\n";
+    h6 = a[5][2];
+    len6 = h6.length();
+    cout << "\nLength of sixth protein sequence is: " << len6 << "\n";
+}
+int main () {
+    mat x;
+    x.data();
+}
+```
+24. **Percentage of A,T,G,C content & merge two sequence and calculate length of merged sequence** 
+ ```c
+ #include <iostream>
+#include <string.h>
+using namespace std;
+class nmerge {
+    private:
+    char seq1[5];
+     float  len;
+    char seq2[5];
+   
+    char i;
+   
+    float t =0; float  a = 0;float g = 0, c = 0;
+    public:
+    void seqmerge ();
+};
+void nmerge::seqmerge ()
+{
+  cout << "Enter first sequence: ";
+  cin>>seq1;
+  cout << "Enter second sequence: ";
+  cin>>seq2;
+strcat (seq1,seq2);
+ cout << "Merged sequence: " << seq1<< "\n";
+   len=strlen(seq1);
+  cout << "length of merged sequence: " << len<<endl;
+  
+  for (i=0; i < 10; i++) {
+      if (seq1[i] == 't') {
+          t = t + 1;
+      }
+      else if (seq1[i] == 'a') {
+          a = a + 1;
+      }
+      else if (seq1[i] == 'c') {
+          c = c + 1;
+      }
+      else if   (seq1[i] == 'g') {
+          g = g + 1;
+      }
+  }
+      cout << "Number of t in the merged sequence: " << t << "\n";
+      cout << "Number of a in the merged sequence: " << a << "\n";
+      cout << "Number of g in the merged sequence: " << g << "\n";
+      cout << "Number of c in the merged sequence: " << c << "\n";
+      
+      int percentT, percentA, percentG, percentC;
+      percentT = (t/10) * 100;
+      cout << "Percent of t is: " << percentT << "\n";
+      percentA = (a/10) * 100;
+      cout << "Percent of a is: " << percentA << "\n";
+      percentG = (g/10) * 100;
+      cout << "Percent of g is: " << percentG << "\n";
+      percentC = (c/10) * 100;
+      cout << "Percent of c is: " << percentC << "\n";
+}
+int main()
+{
+  nmerge  x;
+  x.seqmerge ();
+  return 0;
+}
+```
+25. Calculate the division of students based on marks entered
+```c
+#include <iostream>
+
+using namespace std;
+class Marks{
+  private:
+  int numbers[10];
+  
+  public:
+  float percentage;
+  void input();
+  void output();
+  };
+  
+  void Marks::input() {
+      float sum=0;
+      cout<<"Take 10 marks as input"<<endl;
+      for (int i = 0; i < 10; ++i) {
+        cin >> numbers[i];
+        sum=sum+numbers[i];
+      }
+    percentage=(sum/1000)*100;
+  }
+  void Marks::output (){
+      if(percentage>=70)
+      {
+          cout<<"first division with distinction";
+      }
+      else if (percentage >=60 && percentage  <=70)
+      {
+          cout<<"first division";
+      }
+      else if (percentage <=45 && percentage>=33)
+      {
+          cout<<"third division";
+      }
+      else
+      {cout<<"fail";
+      }
+  }
+  
+ int main(){
+      Marks m;
+      m.input();
+      m.output();
+  }
+  ```
+26. **Sum of First 100 numbers** 
+```c
+#include <iostream>
+using namespace std;
+class TotalSum
+{
+    
+    public:
+    
+    void display(){
+        int sum=0;
+        for(int i=1;i<=100;i++){
+            sum+=i;
+        }
+        
+        cout<<"Sum of First 100 numbers is: "<<sum;
+    }
+};
+
+int main()
+{
+    TotalSum s;
+    s.display();
+    return 0;
+}
+```
 
 
 
